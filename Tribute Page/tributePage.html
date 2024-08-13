@@ -1,1 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to APJ Abdul Kalam</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url("https://wallpaperaccess.com/full/1682023.jpg");
+            background-position: fixed;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            font-size: 70px;
+            text-transform: uppercase;
+            text-align: center;
+            background: #F7FC52;
+            background: linear-gradient(to right, #F7FC52 0%, #F27121, #E94057 51%, #8A2387 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2, h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        img {
+            width: 570px;
+            height: auto;
+            margin: 20px;
+            filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+        }
+
+        #row {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            margin-left: 20px;
+        }
+
+        #column {
+            display: flex;
+            flex-direction: column;
+            float: left;
+            width: 50%;
+            height: auto;
+            padding-right: 30px;
+            margin-left: 10px;
+            justify-content: center;
+        }
+
+        .text-focus-in {
+            animation: text-focus-in 1s cubic-bezier(.55, .085, .68, .53) both;
+        }
+
+        @keyframes text-focus-in {
+            0% {
+                filter: blur(12px);
+                opacity: 0;
+            }
+            100% {
+                filter: blur(0);
+                opacity: 1;
+            }
+        }
+
+        .design-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 100px 0;
+            font-family: Jost;
+        }
+
+        .design {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .timeline {
+            width: 80%;
+            height: auto;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.678);
+            box-shadow: rgba(123, 117, 117, 0.4) 0px 10px 80px;
+            border-radius: 5px;
+            color: white;
+            padding: 1.75rem;
+            transition: 0.4s ease;
+            overflow-wrap: break-word !important;
+            margin: 1rem;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        .component {
+            margin: 0px 20px 20px 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .timeline {
+                display: grid;
+                grid-template-columns: 1fr 3px 1fr;
+            }
+
+            .middle {
+                position: relative;
+                background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+                width: 3px;
+                height: 100%;
+            }
+
+            .main-middle {
+                opacity: 0;
+            }
+
+            .circle {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+                transform: translateX(-50%);
+            }
+        }
+
+        .cards-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            width: 500px;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.811);
+            padding: 20px;
+            margin: 10px;
+            border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header class="text-focus-in">APJ Abdul Kalam</header>
+    <div id="row">
+        <div id="column">
+            <img src="file.png" alt="APJ Abdul Kalam">
+        </div>
+        <div id="column">
+            <h2 class="text-focus-in">Former President Of India</h2>
+            <h1 class="text-focus-in">DR. A.P.J. Abdul Kalam</h1>
+            <p class="text-focus-in">Dr. A.P.J. Abdul Kalam (1931-2015) was an Indian scientist 
+                and politician, renowned for his significant contributions to India's space and missile programs. 
+                Known as the "Missile Man of India," he played a pivotal role in the development of 
+                the Indian satellite launch vehicle and the country's nuclear capabilities.
+                Born in Rameswaram, Tamil Nadu, Kalam pursued aerospace engineering and worked with the Indian Space 
+                Research Organisation (ISRO) and the Defence Research and Development Organisation (DRDO). </p>
+        </div>
+    </div>
+    <header>Time Line</header>
+    <section class="design-section">
+        <div class="timeline" >
+            <div class="empty"></div>
+            <div class="middle">
+                <div class="circle"></div>
+            </div>
+            <div class="component content">
+                <h3>1931</h3>
+                <p>Avul Pakir Jainulabdeen Abdul Kalam was born on 15 October 1931, 
+                    to a Tamil Muslim family in the pilgrimage centre of Rameswaram on Pamban Island</p>
+            </div>
+            <div class="component content">
+                <h3>1954</h3>
+                <p>Kalam went on to attend the St. Joseph's College, Tiruchirappalli from where he graduated in Physics</p>
+            </div>
+            <div class="middle">
+                <div class="circle"></div>
+            </div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="middle">
+                <div class="circle"></div>
+            </div>
+            <div class="component content">
+                <h3>1955</h3>
+                <p>Kalam moved to Madras in 1955 to study aerospace engineering in Madras Institute of Technology</p>
+            </div>
+            <div class="component content">
+                <h3>1960</h3>
+                <p>Kalam joined the Aeronautical Development Establishment of the Defence Research and Development Organisation as a scientist after becoming a member of the Defence Research & Development Service (DRDS)</p>
+            </div>
+            <div class="middle">
+                <div class="circle"></div>
+            </div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="middle">
+                <div class="circle"></div>
+            </div>
+            <div class="component content">
+                <h3>1965</h3>
+                <p>Kalam had first started work on an expandable rocket project independently at DRDO</p>
+            </div>
+            <div class="component content">
+                <h3>1969</h3>
+                <p>Kalam was transferred to the Indian Space Research Organisation (ISRO)</p>
+            </div>
+            <div class="middle">
+                <div class="circle"></div>
+            </div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="middle">
+                <div class="circle"></div>
+            </div>
+            <div class="component content">
+                <h3>1980</h3>
+                <p>He was the project director of India's first Satellite Launch Vehicle (SLV-III) which successfully deployed the Rohini satellite in near-earth orbit</p>
+            </div>
+            <div class="component content">
+                <h3>July 1992 to December 1999</h3>
+                <p>Kalam served as the Chief Scientific Adviser to the Prime Minister and Secretary of DRDO</p>
+            </div>
+            <div class="middle">
+                <div class="circle"></div>
+            </div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="middle">
+                <div class="circle"></div>
+            </div>
+            <div class="component content">
+                <h3>1998</h3>
+                <p>Along with cardiologist Soma Raju, Kalam developed a low cost coronary stent</p>
+            </div>
+            <div class="component content">
+                <h3>25 July 2002 – 25 July 2007</h3>
+                <p>Kalam served as the 11th president of India, succeeding K. R. Narayanan</p>
+            </div>
+            <div class="middle">
+                <div class="circle"></div>
+            </div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="middle">
+                <div class="circle"></div>
+            </div>
+            <div class="component content">
+                <h3>27 July 2015</h3>
+                <p>Kalam was confirmed dead of a sudden cardiac arrest at 7:45 p.m IST</p>
+            </div>
+        </div>
+    </section>
+    <header>Awards and Honours</header>
+    <section class="cards-section">
+        <div class="card">
+            
+                <h1>1981</h1>
+                <p><b>Padma Bhushan</b><br>
+                For his work with ISRO and DRDO and his role as a scientific advisor to the Government</p>
+            
+        </div>
+        <div class="card">
+            
+                <h1>1990</h1>
+                <p><b>Padma Vibhushan</b><br>
+                For his work with ISRO and DRDO and his role as a scientific advisor to the Government</p>
+            
+        </div>
+        <div class="card">
+            
+                <h1>1997</h1>
+                <p><b>Bharat Ratna</b><br>
+                For his contribution to scientific research and modernization of defense technology in India</p>
+            
+        </div>
+        <div class="card">
+            
+                <h1>2008</h1>
+                <p><b>Hoover Medal</b><br>
+                For his outstanding public service</p>
+            
+        </div>
+        <div class="card">
+            
+                <h1>2013</h1>
+                <p><b>Von Braun Award</b><br>
+                For excellence in the management and leadership of a space-related project</p>
+            
+        </div>
+        <div class="card">
+            
+                <h1>2015</h1>
+                <p><b>Dr. A. P. J. Abdul Kalam Award</b><br>
+                For achievements in promoting scientific growth, the humanities, or the welfare of students (awarded posthumously)</p>
+            
+        </div>
+    </section>
+</body>
+</html>
 
